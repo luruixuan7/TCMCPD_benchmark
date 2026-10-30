@@ -1,0 +1,206 @@
+{
+ "A": {
+  "symptom": {
+   "poisson": {
+    "loglik": -51139.15841568889,
+    "k": 1,
+    "aic": 102280.31683137779,
+    "params": {
+     "lambda": 42.01018181818182
+    }
+   },
+   "geometric": {
+    "loglik": -6498.1325197485385,
+    "k": 1,
+    "aic": 12998.265039497077,
+    "params": {
+     "p": 0.023803753202686795
+    }
+   },
+   "negative_binomial": {
+    "loglik": -6443.888241741022,
+    "k": 2,
+    "aic": 12891.776483482045,
+    "params": {
+     "mu": 42.010181593346964,
+     "phi": 1.525371310216944,
+     "r": 0.6555780833833673,
+     "p": 0.01536543796127263
+    }
+   },
+   "discrete_power_law": {
+    "loglik": -6880.477956441072,
+    "k": 1,
+    "aic": 13762.955912882144,
+    "params": {
+     "alpha": 1.3011048558006375
+    }
+   }
+  },
+  "symptom_best": "negative_binomial",
+  "symptom_n": 1375,
+  "symptom_vuong_PL_vs_NB": {
+   "R": -11.453331101347823,
+   "p": 2.2627956880195645e-30,
+   "favours": "negative_binomial"
+  },
+  "symptom_best_raw": "negative_binomial",
+  "syndrome": {
+   "poisson": {
+    "loglik": -6163.129742748463,
+    "k": 1,
+    "aic": 12328.259485496927,
+    "params": {
+     "lambda": 50.67391304347826
+    }
+   },
+   "geometric": {
+    "loglik": -1130.5600962433723,
+    "k": 1,
+    "aic": 2263.1201924867446,
+    "params": {
+     "p": 0.019734019734019736
+    }
+   },
+   "negative_binomial": {
+    "loglik": -1135.0891281560362,
+    "k": 2,
+    "aic": 2274.1782563120723,
+    "params": {
+     "mu": 50.673917639791874,
+     "phi": 1.0122179658476202,
+     "r": 0.9879295109750507,
+     "p": 0.01912300015312915
+    }
+   },
+   "discrete_power_law": {
+    "loglik": -1305.0457495886533,
+    "k": 1,
+    "aic": 2612.0914991773066,
+    "params": {
+     "alpha": 1.2596307017712227
+    }
+   }
+  },
+  "syndrome_best": "geometric",
+  "syndrome_n": 230,
+  "syndrome_vuong_PL_vs_NB": {
+   "R": -11.391268447539964,
+   "p": 4.622115605164826e-30,
+   "favours": "negative_binomial"
+  },
+  "syndrome_best_raw": "geometric",
+  "herb": {
+   "poisson": {
+    "loglik": -65520.37500007184,
+    "k": 1,
+    "aic": 131042.75000014369,
+    "params": {
+     "lambda": 135.72428884026257
+    }
+   },
+   "geometric": {
+    "loglik": -2699.4681616356625,
+    "k": 1,
+    "aic": 5400.936323271325,
+    "params": {
+     "p": 0.0073678779866507595
+    }
+   },
+   "negative_binomial": {
+    "loglik": -2589.0583687898234,
+    "k": 2,
+    "aic": 5182.116737579647,
+    "params": {
+     "mu": 135.72428742564628,
+     "phi": 2.125884232147423,
+     "r": 0.4703925006254307,
+     "p": 0.003453824340863206
+    }
+   },
+   "discrete_power_law": {
+    "loglik": -2725.6712951233394,
+    "k": 1,
+    "aic": 5453.342590246679,
+    "params": {
+     "alpha": 1.2447491959021815
+    }
+   }
+  },
+  "herb_best": "negative_binomial",
+  "herb_n": 457,
+  "herb_vuong_PL_vs_NB": {
+   "R": -6.394914965058916,
+   "p": 1.6063672680258723e-10,
+   "favours": "negative_binomial"
+  },
+  "herb_best_raw": "negative_binomial"
+ },
+ "B": {
+  "patients": 3942,
+  "syndromes_evaluated": 121,
+  "observed_median_bound": 0.40147673922061805,
+  "null_median_mean": 0.1602179708510215,
+  "null_median_p95": 0.16753481021672334,
+  "excess_over_null": 0.24125876836959656,
+  "p_value": 0.01639344262295082,
+  "n_perm": 60,
+  "thr_symptom_support": 5,
+  "min_cell": 3
+ },
+ "C": {
+  "transitions": 809,
+  "mean_jaccard": 0.12372270292542234,
+  "median_jaccard": 0.0,
+  "frac_identical_sets": 0.0519159456118665,
+  "frac_jaccard_zero": 0.73053152039555,
+  "frac_jaccard_ge_0.5": 0.10630407911001236
+ },
+ "D": {
+  "patients": 3563,
+  "silhouette_by_k": {
+   "2": 0.3661,
+   "3": 0.3393,
+   "4": 0.3322,
+   "5": 0.3219,
+   "6": 0.3322
+  },
+  "best_k": 2,
+  "best_silhouette": 0.3661,
+  "k2_bootstrap_ari_mean": 0.9968455551069917,
+  "k2_bootstrap_ari_min": 0.9789998191684901,
+  "cluster_sizes_k2": [
+   2179,
+   1384
+  ]
+ },
+ "E": {
+  "note": "point statistics are deterministic functions of the full data; visit-level bootstrap is invalid here because distinct-visit count shrinks",
+  "values": {
+   "symptom": {
+    "gini_dedup": 0.6542333885213187,
+    "gini_raw": 0.6583131704262717,
+    "entropy_bits_dedup": 9.22800583601466,
+    "entropy_bits_raw": 9.211387449378186,
+    "n_items_dedup": 1375,
+    "n_items_raw": 1375
+   },
+   "syndrome": {
+    "gini_dedup": 0.5231160352899484,
+    "gini_raw": 0.525917860162435,
+    "entropy_bits_dedup": 7.156221568249937,
+    "entropy_bits_raw": 7.146691913897664,
+    "n_items_dedup": 230,
+    "n_items_raw": 230
+   },
+   "herb": {
+    "gini_dedup": 0.7224259947176808,
+    "gini_raw": 0.7233453781784971,
+    "entropy_bits_dedup": 7.340833606621081,
+    "entropy_bits_raw": 7.3350334126539565,
+    "n_items_dedup": 457,
+    "n_items_raw": 457
+   }
+  }
+ }
+}

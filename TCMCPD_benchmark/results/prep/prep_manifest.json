@@ -1,0 +1,94 @@
+{
+ "S1_dedup": {
+  "rule": "a visit either contains an item or not; duplicate edges are collapsed before any statistic",
+  "edges_raw": {
+   "visit_symptom": 60689,
+   "visit_syndrome": 11879,
+   "visit_herb": 63192
+  },
+  "edges_unique": {
+   "visit_symptom": 57764,
+   "visit_syndrome": 11655,
+   "visit_herb": 62026
+  },
+  "duplicate_edges": {
+   "visit_symptom": 2925,
+   "visit_syndrome": 224,
+   "visit_herb": 1166
+  }
+ },
+ "S2_vocabulary": {
+  "rule": "the entity table is a dictionary, not the working vocabulary; report both",
+  "symptom": {
+   "entity": 1487,
+   "used_in_edges": 1375,
+   "unused": 112
+  },
+  "syndrome": {
+   "entity": 233,
+   "used_in_edges": 230,
+   "unused": 3
+  },
+  "herb": {
+   "entity": 703,
+   "used_in_edges": 457,
+   "unused": 246
+  }
+ },
+ "S3_S5_task_specs": {
+  "B1": {
+   "label_min_train_support": 30,
+   "feature_min_train_support": 5,
+   "split": "patient-level 70/15/15, seed 42",
+   "patients": 3942,
+   "train_visits": 3525,
+   "labels_kept": 91,
+   "features_kept": 900,
+   "preferred_model": "label-graph+ASL"
+  },
+  "B2": {
+   "label_min_train_support": 5,
+   "feature_min_train_support": 5,
+   "split": "patient-level 70/15/15, seed 42",
+   "patients": 4027,
+   "train_visits": 5512,
+   "labels_kept": 360,
+   "features_kept": 976,
+   "preferred_model": "label-graph(ML-GCN)"
+  }
+ },
+ "S6_dates": {
+  "full_date_regex": "(\\d{4})\\s*年\\s*(\\d{1,2})\\s*月\\s*(\\d{1,2})\\s*日",
+  "month_day_regex": "(\\d{1,2})\\s*月\\s*(\\d{1,2})\\s*日",
+  "visits": 12900,
+  "visits_with_full_date": 5468,
+  "visits_with_month_day_only": 3503,
+  "visits_with_any_date": 8971,
+  "visits_without_date": 3929,
+  "interval_policy": "intervals computed only when both consecutive visits carry a full date; inferred-year intervals excluded from the primary estimate"
+ },
+ "S7_dosage": {
+  "units": {
+   "g": 61386,
+   "钱": 1067,
+   "枚": 364,
+   "片": 240,
+   "两": 69,
+   "分": 64,
+   "ml": 2
+  },
+  "share_g": 0.9714,
+  "rule": "only grams are used as grams; other units are NOT converted (no reliable conversion)"
+ },
+ "coverage": {
+  "visits": 12900,
+  "visits_with_syndrome_label": 5158,
+  "labelled_share": 0.3998,
+  "visits_with_symptom": 10143,
+  "visits_with_herb": 9456,
+  "labelled_visits_with_multiple_syndromes": 3819,
+  "multi_label_share_among_labelled": 0.7404,
+  "patients_with_ge2_visits": 3563,
+  "max_visits_per_patient": 19
+ }
+}

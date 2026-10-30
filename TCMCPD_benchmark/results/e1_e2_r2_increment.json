@@ -1,0 +1,32 @@
+{
+ "model": "AP proxy ~ log frequency (+ degree + entropy)",
+ "alpha": 0.05,
+ "tasks": {
+  "B1": {
+   "n_labels": 91,
+   "r2_reduced": 0.6738075363593543,
+   "r2_full": 0.7088203974403249,
+   "delta_r2": 0.03501286108097057,
+   "df": [
+    2,
+    87
+   ],
+   "F": 5.2306529840464355,
+   "p_value": 0.007159548461638617,
+   "share_of_explained_from_structure": 0.04939595588305327
+  },
+  "B2": {
+   "n_labels": 322,
+   "r2_reduced": 0.454143771319242,
+   "r2_full": 0.7785916083893585,
+   "delta_r2": 0.3244478370701165,
+   "df": [
+    2,
+    318
+   ],
+   "F": 232.9957131203382,
+   "p_value": 4.902451103987472e-63,
+   "share_of_explained_from_structure": 0.4167111918163218
+  }
+ }
+}

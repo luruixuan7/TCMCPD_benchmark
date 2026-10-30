@@ -1,0 +1,108 @@
+{
+ "scale": {
+  "patients_rows": 4895,
+  "patients_with_visits": 4867,
+  "visits": 12900,
+  "patients_ge2_visits": 3563,
+  "max_visits": 19,
+  "symptom_edges": 60689,
+  "syndrome_edges": 11879,
+  "herb_edges": 63192
+ },
+ "label_coverage": {
+  "visits": 12900,
+  "labelled_visits": 5158,
+  "labelled_share": 0.3998,
+  "multi_syndrome_visits": 3819,
+  "multi_syndrome_share": 0.7404,
+  "mean_syndromes_per_labelled_visit": 2.26
+ },
+ "naming": {
+  "syndromes": 233,
+  "name_length_le3": 105,
+  "share_le3": 0.4506,
+  "heterograph_pairs": [
+   [
+    "瘀滞",
+    "淤滞"
+   ],
+   [
+    "瘀血阻络",
+    "淤血阻络"
+   ]
+  ],
+  "examples_short": [
+   "亡阳",
+   "内热",
+   "冷哮",
+   "冷喘",
+   "冷泻",
+   "劳伤",
+   "外感",
+   "实热",
+   "宫冷",
+   "寒湿",
+   "寒滞",
+   "寒疝"
+  ]
+ },
+ "definition_reuse": {
+  "syndromes_with_definition": 213,
+  "distinct_definitions": 127,
+  "max_times_one_definition_reused": 12,
+  "share_reused_gt1": 0.2677
+ },
+ "duplicate_edges": {
+  "symptom": {
+   "raw": 60689,
+   "unique_visit_item": 57764,
+   "duplicates": 2925
+  },
+  "syndrome": {
+   "raw": 11879,
+   "unique_visit_item": 11655,
+   "duplicates": 224
+  },
+  "herb": {
+   "raw": 63192,
+   "unique_visit_item": 62026,
+   "duplicates": 1166
+  }
+ },
+ "vocabulary": {
+  "symptom": {
+   "entity": 1487,
+   "used": 1375,
+   "unused": 112
+  },
+  "syndrome": {
+   "entity": 233,
+   "used": 230,
+   "unused": 3
+  },
+  "herb": {
+   "entity": 703,
+   "used": 457,
+   "unused": 246
+  }
+ },
+ "dosage_units": {
+  "counts": {
+   "g": 61386,
+   "钱": 1067,
+   "枚": 364,
+   "片": 240,
+   "两": 69,
+   "分": 64,
+   "ml": 2
+  },
+  "share_g": 0.9714
+ },
+ "dates": {
+  "visits": 12900,
+  "with_full_date": 5468,
+  "with_month_day_only": 3503,
+  "without_any_date": 3929,
+  "share_without": 0.3046
+ }
+}

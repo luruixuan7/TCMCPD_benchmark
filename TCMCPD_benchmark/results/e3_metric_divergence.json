@@ -1,0 +1,118 @@
+{
+ "tasks": {
+  "B1": {
+   "n_comparisons": 18,
+   "metrics": {
+    "P@1": {
+     "sig_better": 0,
+     "sig_worse": 4,
+     "not_different": 14,
+     "median_delta": -0.0034146359436133676
+    },
+    "R@10": {
+     "sig_better": 12,
+     "sig_worse": 1,
+     "not_different": 5,
+     "median_delta": 0.06911690110961596
+    },
+    "mAP@10": {
+     "sig_better": 0,
+     "sig_worse": 11,
+     "not_different": 7,
+     "median_delta": -0.06042319380891431
+    },
+    "microF1": {
+     "sig_better": 6,
+     "sig_worse": 3,
+     "not_different": 9,
+     "median_delta": 0.0032506539323458473
+    },
+    "macroF1": {
+     "sig_better": 17,
+     "sig_worse": 0,
+     "not_different": 1,
+     "median_delta": 0.051814996488210946
+    }
+   },
+   "best_model_by_R@10": {
+    "name": "label-graph+ASL",
+    "R@10": 0.3697,
+    "macroF1": 0.0831,
+    "mAP@10": 0.4409,
+    "prior_R@10": 0.2445,
+    "prior_mAP": 0.4786,
+    "equivalence": {
+     "d_mAP_mean": -0.03835822304464474,
+     "d_mAP_ci95": [
+      -0.08250148874243028,
+      0.008638686382600002
+     ],
+     "P_abs_dmAP_lt_0.05": 0.694,
+     "d_macroF1_mean": 0.07811426758931868,
+     "d_macroF1_ci95": [
+      0.06846620701713806,
+      0.08745170061786416
+     ],
+     "P_dmacroF1_gt_0": 1.0
+    }
+   }
+  },
+  "B2": {
+   "n_comparisons": 18,
+   "metrics": {
+    "P@1": {
+     "sig_better": 8,
+     "sig_worse": 3,
+     "not_different": 7,
+     "median_delta": 0.021400843280198305
+    },
+    "R@10": {
+     "sig_better": 9,
+     "sig_worse": 2,
+     "not_different": 7,
+     "median_delta": 0.014355416347583135
+    },
+    "mAP@10": {
+     "sig_better": 0,
+     "sig_worse": 7,
+     "not_different": 11,
+     "median_delta": -0.010380510065837106
+    },
+    "microF1": {
+     "sig_better": 9,
+     "sig_worse": 5,
+     "not_different": 4,
+     "median_delta": 0.007909476135896942
+    },
+    "macroF1": {
+     "sig_better": 18,
+     "sig_worse": 0,
+     "not_different": 0,
+     "median_delta": 0.03614124912602264
+    }
+   },
+   "best_model_by_R@10": {
+    "name": "label-graph(ML-GCN)",
+    "R@10": 0.2953,
+    "macroF1": 0.0537,
+    "mAP@10": 0.5137,
+    "prior_R@10": 0.2574,
+    "prior_mAP": 0.5128,
+    "equivalence": {
+     "d_mAP_mean": -0.0017670700321698808,
+     "d_mAP_ci95": [
+      -0.025376861104402022,
+      0.02427485792817322
+     ],
+     "P_abs_dmAP_lt_0.05": 1.0,
+     "d_macroF1_mean": 0.05032622429531742,
+     "d_macroF1_ci95": [
+      0.04474294985858637,
+      0.056218261638959925
+     ],
+     "P_dmacroF1_gt_0": 1.0
+    }
+   }
+  }
+ }
+}
